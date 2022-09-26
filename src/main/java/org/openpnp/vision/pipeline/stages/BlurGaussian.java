@@ -13,7 +13,7 @@ import org.simpleframework.xml.Attribute;
 @Stage(category="Image Processing", description="Performs gaussian blurring on the working image.")
 public class BlurGaussian extends CvStage {
     @Attribute
-    @Property(description="Width and height of the blurring kernel. Should be and odd number greater than or equal to 3")
+    @Property(description="Width and height of the blurring kernel. Should be an odd number greater than or equal to 3")
     private int kernelSize = 3;
 
     @Attribute(required = false)
